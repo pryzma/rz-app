@@ -1,5 +1,5 @@
 {
-    "name" : "rayz Demo App",
+    "name" : "rz Demo App",
     "app" : "rz-demo-app",
     "client" :{
         "require" : [ 
@@ -9,15 +9,15 @@
             "application-dev-env"
         ],
         "modules" : [
-            {"module" : "dashboard" }
+            {"module" : "helloworld" }
             
         ],
         "menu" : ["accounts","targets","checklist"],
         "routes" : {
-            "dashboard" : "dashboard"
+            "helloworld" : "helloworld"
             
         },
-        "default" : "dashboard",
+        "default" : "helloworld",
         "main" : "section#mainContent",
         "nav" : "nav#headerNav",
         "template" : "pageLayout",
@@ -55,23 +55,7 @@
     },
     "server" : {
         "routes" : {
-            "/" : "index",
-            "/verify" : "verify",
-            "/notif" : "notifications",
-            "/status" : "status",
-            "/config" : "config",
-            "/api/accounts" : "accounts",
-            "/api/medients" : "medients",
-            "/api/targets" : "targets",
-            "/api/subjects" : "subjects",
-            "/api/checklist" : "checklist",
-            "/api/contacts" : "contacts",
-            "/api/account" : "account",
-            "/api/categories" : "categories",
-            "/api/levels" : "levels",
-            "/api/sublevels" : "sublevels",
-            "/api/evaluations" : "evaluations"
-
+            "/" : "index"
         },
         "require" : [
             "dev",
